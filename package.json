@@ -1,0 +1,21 @@
+{
+  "name": "pcf-project",
+  "version": "1.0.0",
+  "description": "Project containing your PowerApps Component Framework (PCF) control.",
+  "scripts": {
+    "build": "pcf-scripts build",
+    "clean": "pcf-scripts clean",
+    "rebuild": "pcf-scripts rebuild",
+    "start": "pcf-scripts start"
+  },
+  "dependencies": {
+    "@types/node": "^10.17.60",
+    "@types/powerapps-component-framework": "^1.3.1",
+    "@types/select2": "^4.0.54",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "pcf-scripts": "^1.7.4",
+    "pcf-start": "^1.7.4"
+  }
+}
