@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eKSCTOaiRv5v0R+7iSafp3bXDLmcau14UYNhng5MvVzWnbH7h64I0g/1F+Z40vMV9WHum/Hy9rlt/SN0S2bO7Q==",
+  "success": true,
+  "projectFilePath": "D:\\SourceCode\\PCF\\ITAintBoring.PCFControls-master\\ITAintBoring.PCFControls-master\\Controls\\NToNMultiSelect\\NToNMultiSelect.pcfproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bipin.kumar\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.7.4\\microsoft.powerapps.msbuild.pcf.1.7.4.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,78 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.7.4": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
+          "build/Microsoft.PowerApps.MSBuild.Pcf.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.PowerApps.MSBuild.Pcf/1.7.4": {
+      "sha512": "kzaGEQa1oik4ZIDUuBOjZW0uAhi8DLymv2sYIxo6WbGxtiQLdcaHR6pjUMLrj1OQnwfelpx4f2SvA+XKrOobjw==",
+      "type": "package",
+      "path": "microsoft.powerapps.msbuild.pcf/1.7.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "3rdPartyNotice.txt",
+        "LICENSE.txt",
+        "build/Microsoft.PowerApps.MSBuild.Pcf.props",
+        "build/Microsoft.PowerApps.MSBuild.Pcf.targets",
+        "microsoft.powerapps.msbuild.pcf.1.7.4.nupkg.sha512",
+        "microsoft.powerapps.msbuild.pcf.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [
+      "Microsoft.PowerApps.MSBuild.Pcf >= 1.*"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\bipin.kumar\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\SourceCode\\PCF\\ITAintBoring.PCFControls-master\\ITAintBoring.PCFControls-master\\Controls\\NToNMultiSelect\\NToNMultiSelect.pcfproj",
+      "projectName": "NToNMultiSelect",
+      "projectPath": "D:\\SourceCode\\PCF\\ITAintBoring.PCFControls-master\\ITAintBoring.PCFControls-master\\Controls\\NToNMultiSelect\\NToNMultiSelect.pcfproj",
+      "packagesPath": "C:\\Users\\bipin.kumar\\.nuget\\packages\\",
+      "outputPath": "D:\\SourceCode\\PCF\\ITAintBoring.PCFControls-master\\ITAintBoring.PCFControls-master\\Controls\\NToNMultiSelect\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\bipin.kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net462"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net462": {
+        "targetAlias": "net462",
+        "dependencies": {
+          "Microsoft.PowerApps.MSBuild.Pcf": {
+            "target": "Package",
+            "version": "[1.*, )"
+          }
+        }
+      }
+    }
+  }
+}
