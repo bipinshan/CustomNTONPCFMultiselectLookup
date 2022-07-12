@@ -174,7 +174,7 @@ export class CustomNToNMultiSelect implements ComponentFramework.StandardControl
 			if((<any>this.contextObj).page.entityId != null 
 			   && (<any>this.contextObj).page.entityId != "00000000-0000-0000-0000-000000000000")
 			{
-				this.contextObj.webAPI.retrieveMultipleRecords(this._intersectEntityName, "?$filter=_"+ this.__intersectEntityMainEntityLookupAttribute+"_value eq " + (<any>this.contextObj).page.entityId +"and  statecode eq 0", 5000).then(this._relationshipSuccessCallback, this.errorCallback);
+				this.contextObj.webAPI.retrieveMultipleRecords(this._intersectEntityName, "?$filter=_"+ this.__intersectEntityMainEntityLookupAttribute+"_value eq " + (<any>this.contextObj).page.entityId +" and  statecode eq 0", 5000).then(this._relationshipSuccessCallback, this.errorCallback);
 			}
 			else{
 				this.relationshipSuccessCallback(null);
