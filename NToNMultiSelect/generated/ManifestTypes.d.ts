@@ -13,6 +13,8 @@ export interface IInputs {
     idAttribute: ComponentFramework.PropertyTypes.StringProperty;
     relationshipName: ComponentFramework.PropertyTypes.StringProperty;
     relationshipEntity: ComponentFramework.PropertyTypes.StringProperty;
+    isDeleteEntity: ComponentFramework.PropertyTypes.EnumProperty<"yes" | "no">;
+    isIncludeInactiveLinkedEntity: ComponentFramework.PropertyTypes.EnumProperty<"yes" | "no">;
     linkedEntityFetchXmlResource: ComponentFramework.PropertyTypes.StringProperty;
 }
 export interface IOutputs {

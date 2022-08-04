@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-109" ?>
 <manifest>
-  <control namespace="WBG.PCFControls" constructor="CustomNToNMultiSelect" version="0.0.109" display-name-key="CustomNToNMultiSelect" description-key="CustomNToNMultiSelect description" control-type="standard">
+  <control namespace="WBG.PCFControls" constructor="CustomNToNMultiSelect" version="0.1.0" display-name-key="CustomNToNMultiSelect" description-key="CustomNToNMultiSelect description" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="value" display-name-key="Value" description-key="Value" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="intersectEntityName" display-name-key="Intersect Entity Name" description-key="Intersect Entity Name" of-type="SingleLine.Text" usage="input" required="false" />
@@ -11,6 +11,14 @@
     <property name="idAttribute" display-name-key="Linked Entity ID Attribute" description-key="Linked Entity ID Attribute" of-type="SingleLine.Text" usage="input" required="false" />
     <property name="relationshipName" display-name-key="Relationship Name" description-key="Relationship Name" of-type="SingleLine.Text" usage="input" required="false" />
     <property name="relationshipEntity" display-name-key="Relationship Entity" description-key="Relationship Entity" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="isDeleteEntity" display-name-key="Delete entity" description-key="Delete entity when unselect" of-type="Enum" usage="input" required="true">
+      <value name="Yes" display-name-key="Yes" description-key="Enable Delete Entity">yes</value>
+      <value name="No" display-name-key="No" description-key="Disable Delete Entity" default="true">no</value>
+    </property>
+    <property name="isIncludeInactiveLinkedEntity" display-name-key="Include inactive linked entity" description-key="Is included inactive in linked entity" of-type="Enum" usage="input" required="true">
+      <value name="Yes" display-name-key="Yes" description-key="Included Inactive Linked Entity">yes</value>
+      <value name="No" display-name-key="No" description-key="Excluded Inactive Linked Entity" default="true">no</value>
+    </property>
     <property name="linkedEntityFetchXmlResource" display-name-key="FetchXml Web Resource" description-key="Optional FetchXml web resource to select linked entity records" of-type="SingleLine.Text" usage="input" required="false" />
     
     <feature-usage>
