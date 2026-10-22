@@ -397,7 +397,7 @@ export class CustomNToNMultiSelect implements ComponentFramework.StandardControl
 			else if(action == "unselect")
 			{
 
-				this.contextObj.webAPI.retrieveMultipleRecords(this._intersectEntityName, "?$select="+this._intersectEntityName+"id&$filter=_"+this.__intersectEntityMainEntityLookupAttribute+"_value eq "+(<any>this.contextObj).page.entityId +" and  _"+this.__intersectEntityRelatedEntityLookupAttribute+"_value eq "+id+" and  statecode eq 0").then(
+				this.contextObj.webAPI.retrieveMultipleRecords(this._intersectEntityName, "?$select="+this._intersectEntityName+"id&$filter=_"+this.__intersectEntityMainEntityLookupAttribute+"_value eq "+(<any>this.contextObj).page.entityId + "and  _"+this.__intersectEntityRelatedEntityLookupAttribute+"_value eq "+id+" and  statecode eq 0").then(
 					(response: ComponentFramework.WebApi.RetrieveMultipleResponse) => {
 						// Retrieve multiple completed successfully -- retrieve the averageValue 
 						if(response!=null)
